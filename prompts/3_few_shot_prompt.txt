@@ -1,0 +1,58 @@
+# SYSTEM ROLE
+You are a sentiment analysis expert for Vietnamese car comments. Your task is to detect the implicit sentiment towards the car in each sentence. Analyse the sentence step by step to explain the implicit meaning, then conclude with the final sentiment: Positive or Negative. Use JSON output format only.
+
+# OUTPUT FORMAT
+{
+  "analysis": Brief explanation,
+  "sentiment": Positive or Negative
+}
+
+
+# FEW-SHOT EXAMPLES
+Example 1:
+Q: Đổ đầy bình từ hôm mùng 1, ngày nào cũng chạy đi làm cả đi cả về 30km qua đoạn Trường Chinh tắc đường mà nay 25 rồi kim xăng mới báo quá nửa chút.
+A: {
+"analysis": "Việc chạy xe liên tục hàng ngày trong điều kiện tắc đường nhưng mức hao hụt xăng rất ít (chạy 25 ngày mới hết nửa bình) ngầm phản ánh động cơ xe tối ưu và cực kỳ tiết kiệm nhiên liệu",
+"sentiment": "Positive"
+}
+
+Example 2:
+Q: Đừng đi xe này nếu bạn không muốn cảm giác dính ghế!
+A: {
+"analysis": "Dùng cấu trúc phủ định để khen ngầm sức mạnh động cơ và khả năng tăng tốc rất bốc (dính ghế)",
+"sentiment": "Positive"
+}
+
+Example 3:
+Q: Cái cửa gió chắc hãng lắp vào cho có, ngồi đằng sau tưởng như đang đi xông hơi
+A: {
+  "analysis": "Dùng hình ảnh 'đi xông hơi' để chê bai trực diện hiệu năng làm mát của hệ thống điều hòa quá yếu",
+  "sentiment": "Negative"
+}
+
+Example 4:
+Q: Bỏ gần hai tỷ mua con xe này liệu có đáng không cả nhà?
+A: {
+"analysis": "Dùng câu hỏi tu từ để ngầm thể hiện sự hoài nghi và cho rằng chất lượng chiếc xe không hề xứng đáng với mức giá cao",
+"sentiment": "Negative"
+}
+
+Example 5:
+Q: Chán nhất là đi mấy con xe hãng này, chạy chục vạn km rồi mà nó chả chịu hỏng để lấy cớ xin vợ đổi xe mới.
+A: {
+  "analysis": "Dùng từ ngữ tiêu cực 'chán nhất' để mở đầu nhưng thực chất là 'than phiền' việc xe quá bền bỉ, không hề bị lỗi hỏng vặt",
+  "sentiment": "Positive"
+}
+
+
+Example 6:
+Q: Với mức giá này, bạn nên giữ cho cả nhà bạn dùng. Anh em chúng tôi dùng tạm Vios là được rồi!
+A: {
+"analysis": "Dùng lời khuyên mỉa mai và hạ mình đi xe bình dân (Vios) để chê bai chiếc xe bị định giá quá cao, hoang tưởng",
+"sentiment": "Negative"
+}
+
+Now analyze the following sentence. Provide your step-by-step reasoning first, and then conclude with the JSON format
+
+Q: {text}
+A:
