@@ -8,7 +8,7 @@
 > ¹School of Information and Communication Technology, Hanoi University of Science and Technology, Hanoi, Vietnam
 ---
 
-Official repository for **VietCar-ISA**, a Vietnamese implicit sentiment analysis benchmark for automotive discussions.
+Official repository for **VietCar-ISA**, a Vietnamese implicit sentiment analysis benchmark for automotive discussions. Our work has been accepted for publication in the 15th International Symposium on Information and Communication Technology (SOICT 2026)
 
 VietCar-ISA evaluates whether Large Language Models (LLMs) can understand Vietnamese implicit sentiment. The dataset contains **302 human-validated Vietnamese automotive comments** with rich annotations including sentiment polarity, implicit type, and a supporting rationale. The full dataset can be found at: https://huggingface.co/datasets/thainguyenquoc1/VietCar-ISA
 
