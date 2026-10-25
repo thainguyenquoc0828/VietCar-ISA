@@ -1,0 +1,4 @@
+aiohttp
+nest_asyncio
+pandas
+tqdm
